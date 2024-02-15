@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <img src="" alt="">
+        <h1 class="titulo">Calculadora - Preço de chapa</h1>
+            <div class="lista-input">
+                <div class="input-tudo">
+                    <p class="texto-input">Altura:</p>
+                    <input type="text" id="altura" class="input-medida" placeholder="Altura(mm)">
+                </div>
+                <div class="input-tudo">
+                    <p class="texto-input">Largura:</p>
+                    <input type="text" id="largura" class="input-medida" placeholder="Largura(mm)">
+                </div>
+                <select id="espessura" class="input-medida" aria-placeholder="Espessura">
+                    <option value="" selected disabled>Espessura</option>
+                    <option value="9.60">Chapa 18</option>
+                    <option value="12.00">Chapa 16</option>
+                    <option value="16.00">Chapa 14</option>
+                    <option value="24.00">Chapa 11</option>
+                    <option value="49.39">1/4"</option>
+                    <option value="62.72">5/16"</option>
+                    <option value="74.48">3/8"</option>
+                    <option value="98.00">1/2"</option>
+                    <option value="125.44">5/8"</option>
+                    <option value="149.00">3/4"</option>
+                </select>
+                <div class="input-tudo">
+                    <p class="texto-input">Preço por quilo:</p>
+                    <input type="text" id="preco-quilo" class="input-medida" placeholder="Reais(R$)">
+                </div>
+            </div>
+            <button id="botao" >Calcular</button>
+            <p id="precoFinal" class="hidden">placeholder</p>
+        <script type="text/javascript" src="index.js"></script>
+    </main>
+</body>
+</html>
